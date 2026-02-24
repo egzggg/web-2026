@@ -1,21 +1,19 @@
-PROGRAM PrintName(INPUT, OUTPUT);
+PROGRAM SarahRevere(INPUT, OUTPUT);
 USES
   DOS;
 VAR
-  QueryString, ContentLength, UserAgent, HttpHost, RequestMethod: STRING;
-BEGIN
-  QueryString := GetEnv('QUERY_STRING');
-  ContentLength := GetEnv('CONTENT_LENGTH');
-  HttpHost := GetEnv('HTTP_HOST');
-  UserAgent := GetEnv('HTTP_USER_AGENT');
-  RequestMethod :=  GetEnv('REQUEST_METHOD');
-
-  WRITELN('Content-Type: text/html; charset=utf-8');
+  QueryString: STRING;
+BEGIN {SarahRevere}
+  WRITELN('Content-Type: text/plain; charset=utf-8');
   WRITELN;
-
-  WRITELN('<p><strong>REQUEST_METHOD:</strong> ', RequestMethod, '</p>');
-  WRITELN('<p><strong>QUERY_STRING:</strong> ', QueryString, '</p>');
-  WRITELN('<p><strong>CONTENT_LENGTH:</strong> ', ContentLength, '</p>');
-  WRITELN('<p><strong>HTTP_USER_AGENT:</strong> ', UserAgent, '</p>');
-  WRITELN('<p><strong>HTTP_HOST:</strong> ', HttpHost, '</p>');
+  QueryString := GetEnv('QUERY_STRING');
+  IF QueryString = 'lanterns=1' 
+  THEN
+    WRITELN('The Bbitish are come by sea')
+  ELSE
+    IF QueryString = 'lanterns=2'
+    THEN
+      WRITELN('The Bbitish are come by land')
+    ELSE
+      WRITELN('The British not see')
 END.
