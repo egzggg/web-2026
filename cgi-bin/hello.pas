@@ -2,20 +2,18 @@ PROGRAM PrintName(INPUT, OUTPUT);
 USES
   DOS;
 VAR
-  QueryString, ContentLength, UserAgent, HttpHost, RequestMethod: STRING;
+  QueryString, Name: STRING;
+  PosName: INTEGER;
 BEGIN
-  QueryString := GetEnv('QUERY_STRING');
-  ContentLength := GetEnv('CONTENT_LENGTH');
-  HttpHost := GetEnv('HTTP_HOST');
-  UserAgent := GetEnv('HTTP_USER_AGENT');
-  RequestMethod :=  GetEnv('REQUEST_METHOD');
-
-  WRITELN('Content-Type: text/html; charset=utf-8');
+  WRITELN('Content-Type: text/plain; charset=utf-8');
   WRITELN;
-
-  WRITELN('<p><strong>REQUEST_METHOD:</strong> ', RequestMethod, '</p>');
-  WRITELN('<p><strong>QUERY_STRING:</strong> ', QueryString, '</p>');
-  WRITELN('<p><strong>CONTENT_LENGTH:</strong> ', ContentLength, '</p>');
-  WRITELN('<p><strong>HTTP_USER_AGENT:</strong> ', UserAgent, '</p>');
-  WRITELN('<p><strong>HTTP_HOST:</strong> ', HttpHost, '</p>');
+  QueryString := GetEnv('QUERY_STRING');
+  PosName := Pos('name=', QueryString);
+  IF PosName > 0
+  THEN 
+    Name := Copy(QueryString, PosName, Length(QueryString) - PosName + 1) 
+  ELSE 
+    Name := 'Anonymous';
+  WRITELN('Hello ', 'dear ', Name);  
 END.
+
