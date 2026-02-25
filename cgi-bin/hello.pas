@@ -16,4 +16,3 @@ BEGIN
     Name := 'Anonymous';
   WRITELN('Hello ', 'dear ', Name);  
 END.
-
