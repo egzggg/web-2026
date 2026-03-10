@@ -1,0 +1,83 @@
+body {
+    font-family: "Golos Text", sans-serif;
+    width: 100%;
+}
+
+main {
+    display: flex;  
+}
+
+h1 {
+    position: absolute;
+    font-size: 140px;
+    font-weight: bold;
+    margin-left: 179px;
+    margin-top: 182.37px;
+}
+
+.man {
+    height: 501px;
+    width: 462px;
+    margin-top: 289px;
+    margin-left: 289px;
+}
+
+.Login {
+    /* background-color:beige; */
+    width: 343px;
+    height: 251px;
+    margin-top: 375px;
+    margin-left: 107px;
+    /* gap: 30px; */
+}
+
+
+
+
+.email {
+    font-family: "Golos Text", sans-serif;
+    font-size: 15px;
+}
+
+.input {
+    height: 50px;
+    width: 325px; 
+    background-color: #edf2f8;
+    border-radius: 10px;
+    padding-left: 15px;
+    display: block; 
+}
+
+.password {
+    font-family: "Golos Text", sans-serif;
+    font-size: 15px;
+    height: 90px;
+}
+
+.input_password {
+    height: 50px;
+    width: 325px; 
+    background-color: #edf2f8;
+    border-radius: 10px;
+    padding-left: 15px;
+    display: block;
+}
+.eye {
+    width: 22px;
+    height: 22px;
+    filter: invert(100%);
+    margin-top: 15px;
+    margin-left: 310px;
+}
+
+.button {
+   width: 347px;
+   height: 50px;
+   background-color: black;
+   color: white;
+   padding-right: 16px;
+   padding-left: 16px;
+   border-radius: 10px;
+   margin-top: 0px;
+
+}

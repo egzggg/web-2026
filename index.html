@@ -1,13 +1,43 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>гогираш</title>
-    <link rel="stylesheet" href="/css/main.css"> 
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-
+    <main>
+        <div>
+            <h1>Войти</h1>
+            <div>
+                <img
+                class="man"
+                srcset="images/man.png,"
+                src="images/man.png" 
+                alt="happy man"
+                >
+            </div>
+        </div>
+        <div class="Login">
+            <div class="email">
+                <p style="margin: 0px;">Электропочта</p>
+                <input class="input" type="text" name="names">
+                <p style="font-size: 13px; margin: 0px; color: gray;">Введите электропочту в формате *****@***.**</p>
+            </div>
+            <div class="password">
+                <p style="margin-top: 15px; margin-bottom: 0px;">Пароль</p>
+                <input class="input_password" type="password" name="pass" style="position: absolute">
+                <img src="images/Eye.png" alt="Eye" class="eye">
+            </div>
+            <div>
+                <button class="button">Продолжить</button>
+            </div>
+        </div>
+    </main>
 </body>
-
 </html>
