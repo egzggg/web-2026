@@ -1,6 +1,7 @@
 body {
     font-family: "Golos Text", sans-serif;
     width: 100%;
+    display: flex;
 }
 
 main {
@@ -30,9 +31,6 @@ h1 {
     margin-left: 107px;
     /* gap: 30px; */
 }
-
-
-
 
 .email {
     font-family: "Golos Text", sans-serif;
