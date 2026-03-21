@@ -1,7 +1,8 @@
 body {
-    font-family: "Golos Text", sans-serif;
+    font-family: "Golos Text", sans-serif, Arial;
     width: 100%;
     display: flex;
+    font-family: "Golos Text", sans-serif;
 }
 
 main {

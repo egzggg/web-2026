@@ -3,76 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
 </head>
-<body>
-    <main style="display: flex;">
-        <div class="left_line">
-            <ul class="menu" style="padding-top: 40px; padding-left: 5px;">
-                <li><img src="images/Menu_Item1.png" 
-                    alt="Картинка 1" 
-                    width="40px">
-                </li>
-                <li><img src="images/Menu_Item3.png" 
-                    alt="Картинка 2" 
-                    width="40px">
-                </li>
-                <li><img src="images/Menu_Item2.png" 
-                    alt="Картинка 3" 
-                    width="40px">
-                </li>
-            </ul>
-        </div>
-        <div class="right_line" style="flex-direction: column;">
-            <div class="header">
-                <h1 class="head_line">ВЕБЧИКИ</h1>
+<body class="body">
+    <header class="header">
+        <ul class="header__menu">
+            <li><img class="header__menu-image" src="images/Menu_Item1.png" alt="home"></li>
+            <li ><img class="header__menu-image" src="images/Menu_Item3.png" alt="personal-home"></li>
+            <li><img class="header__menu-image" src="images/Menu_Item2.png" alt="add-photo"></li>
+        </ul>
+    </header>
+    <main class="main">
+        <h1 class="main__head"></h1>
+        <div class="user-feed">
+            <div class="user-feed__post">
+                <div class="user-feed__icon">
+                    <img class="user-feed__icon-image" src="images/larch.png" alt="yaric">
+                    <h1 class="user-feed__name">Ваня Денисов</h1>
+                    <img class="user-feed__icon-edit" src="images/pencil.png" alt="pensil">
+                </div>
+                <img class="user-feed__image" src="images/winter.png" alt="winter">
+                <div class="user-feed__comment">
+                    <button class="user-feed__comment-button">❤️ 203</button>
+                    <p class="user-feed__comment-massage">Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк</p>
+                    <p class="user-feed__comment-more-info">еще</p>
+                    <p class="user-feed__comment-time">2 часа назад</p>
+                </div>
             </div>
-            <div class="post" style="flex-direction: column;">
-                <div class="first_part" style="flex-direction: column;">
-                    <div class="user_info" style="display: flex; width: 474px; height: 32px; margin-top: 10px; margin-bottom: 10px;">
-                        <div style="display: flex; width: 200px; height: 32px;">
-                            <img src="images/yaric.png" alt="yaric" style="border-radius: 10px; width: 32px;">
-                            <h1 style="font-size: 13px; font-weight: 500; padding-left: 5px;">Шарики Шамаевы</h1>
-                        </div>
-                        <div style="width: 342px; height: 32px;">
-                            <img src="images/pencil.png" alt="pencil" style="padding-left: 285px; padding-top: 10px; width: 24px; ">
-                        </div>
-                    </div>
-                    <img src="images/winter.png" alt="winter" style="width: 474px;">
-                    <div class="message" style="width: 474px; height: 145px;">
-                        <button class="button">❤️ 203</button>
-                        <p style="font-size: 15px; margin: 0px; margin-top: 5px; font-weight: 500;">Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк</p>
-                        <p style="color: rgb(197, 195, 195); margin: 0px;">еще</p>
-                        <p style="color: rgb(197, 195, 195); margin: 0px; margin-top: 5px;">2 часа назад</p>
-                    </div>
+            <div class="user-feed__post">
+                <div class="user-feed__icon">
+                    <img class="user-feed__icon-image" src="images/liz.png" alt="liz">
+                    <p class="user-feed__name">Лиза Дёмина</p>
+                    <img class="user-feed__icon-edit" src="images/pencil.png" alt="pensil">
                 </div>
-                <div class="last_part">
-                    <div class="first_part" style="flex-direction: column;">
-                    <div class="user_info" style="display: flex; width: 474px; height: 32px; margin-top: 10px; margin-bottom: 10px;">
-                        <div style="display: flex; width: 200px; height: 32px;">
-                            <img src="images/bear.png" alt="bear" style="border-radius: 10px; width: 32px;">
-                            <h1 style="font-size: 13px; font-weight: 500; padding-left: 5px;">Джэффри Эпштейн</h1>
-                        </div>
-                        <div style="width: 342px; height: 32px;">
-                            <img src="images/pencil.png" alt="pencil" style="padding-left: 285px; padding-top: 10px; width: 24px; ">
-                        </div>
-                    </div>
-                    <img src="images/puncacke.png" alt="puncacke" style="width: 474px;">
-                    <div class="message" style="width: 474px; height: 145px;">
-                        <button class="button">❤️ 54</button>
-                        <p style="font-size: 15px; margin: 0px; margin-top: 5px; font-weight: 500;">Сейчас бы на свой остров.....</p>
-                        <p style="color: rgb(197, 195, 195); margin: 0px;">еще</p>
-                        <p style="color: rgb(197, 195, 195); margin: 0px; margin-top: 5px;">1 часа назад</p>
-                    </div>
-                </div>
+                <img class="user-feed__image" src="images/fish.png" alt="winter">
+                <div class="user-feed__comment">
+                    <button class="user-feed__comment-button">❤️ 504</button>
+                    <p class="user-feed__comment-message">&nbsp;</p>
+                    <p class="user-feed__comment-more-info"></p>
+                    <p class="user-feed__comment-time">1 день назад</p>
                 </div>
             </div>
         </div>
-        
     </main>
 </body>
 </html>
