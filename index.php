@@ -1,38 +1,48 @@
 <?php
-$year = $_POST['digit'];
+$date = $_POST['birthdate'];
+list($year, $month, $day) = explode('-', $date);
+$year = (int)$year;
+$month = (int)$month;
+$day = (int)$day;
 
-switch ($year) {
-    case 0:
-        echo "Ноль";
+$DATE_BIRTHD = $month * 100 + $day;
+
+switch (true) {
+    
+    case ($DATE_BIRTHD >= 120 && $DATE_BIRTHD <= 218):
+        echo "Водолей";
         break;
-    case 1:
-        echo "Один";
+        case ($DATE_BIRTHD >= 219 && $DATE_BIRTHD <= 320):
+        echo "Рыбы";
         break;
-    case 2:
-        echo "Два";
+    case ($DATE_BIRTHD >= 321 && $DATE_BIRTHD <= 419):
+        echo "Овен";
         break;
-    case 3:
-        echo "Три";
+    case ($DATE_BIRTHD >= 420 && $DATE_BIRTHD <= 520):
+        echo "Телец";
         break;
-    case 4:
-        echo "Четыре";
+    case ($DATE_BIRTHD >= 521 && $DATE_BIRTHD <= 621):
+        echo "Близнецы";
         break;
-    case 5:
-        echo "Пять";
+    case ($DATE_BIRTHD >= 622 && $DATE_BIRTHD <= 722):
+        echo "Рак";
         break;
-    case 6:
-        echo "Шесть";
+    case ($DATE_BIRTHD >= 723 && $DATE_BIRTHD <= 822):
+        echo "Лев";
         break;
-    case 7:
-        echo "Семь";
+    case ($DATE_BIRTHD >= 823 && $DATE_BIRTHD <= 922):
+        echo "Дева";
         break;
-    case 8:
-        echo "Восемь";
+    case ($DATE_BIRTHD >= 923 && $DATE_BIRTHD <= 1023):
+        echo "Весы";
         break;
-    case 9:
-        echo "Девять";
+    case ($DATE_BIRTHD >= 1024 && $DATE_BIRTHD <= 1122):
+        echo "Скорпион";
+        break;
+    case ($DATE_BIRTHD >= 1123 && $DATE_BIRTHD <= 1221):
+        echo "Стрелец";
         break;
     default:
-        echo "не входит в промежуток от 0 до 9";
+        echo "Козерог";
 }
 ?>
