@@ -1,7 +1,6 @@
 <?php
 $nums = $_POST['nums'];
 
-
 function factorial(int $num) {
     if ($num <= 1) {          
         return 1;
