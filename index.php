@@ -1,9 +1,9 @@
 <?php
 $date = $_POST['birthdate'];
-list($year, $month, $day) = explode('-', $date);
-$year = (int)$year;
-$month = (int)$month;
-$day = (int)$day;
+$arr = explode('-', $date);
+$year = (int)$arr[0];
+$month = (int)$arr[1];
+$day = (int)$arr[2];
 
 $DATE_BIRTHD = $month * 100 + $day;
 
