@@ -1,13 +1,13 @@
-<?php
-$year = $_POST['year'];
 
-if ($year <= 30000) {
-    if ($year % 4 == 0 or $year % 400 ==0) {
-        echo "$year весокосный год";
-    } else {
-        echo "$year не весокосный год";
-    } 
-}else {
-    echo "год больше 30000";
-}
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>Всем привет</div>
+  <div>Версия PHP: <?php print phpversion(); ?></div>
+</body>
+</html>
