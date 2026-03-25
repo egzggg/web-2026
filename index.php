@@ -22,7 +22,7 @@ foreach ($expressionArray as $char) {
                 case '/':
                     if ($ch2 == 0){
                         array_push($arrayForChar, $ch1 / 1);}
-                    else {
+                    else { 
                         array_push($arrayForChar, $ch1 / $ch2);}
                     break;
         }
