@@ -4,7 +4,9 @@
         <h3 class="user-feed__name"><?= $post['name'] ?></h3>
         <img class="user-feed__icon-edit" src="images/pencil.png" alt="<?= $post['name'] ?>">
     </div>
-    <img class="user-feed__image" src="<?= $post['image'] ?>" alt="<?= $post['name'] ?>">
+    <a title='<?= $post['name'] ?>' href="post.php?id=<?= $post['id'] ?>">
+        <img class="user-feed__image" src="<?= $post['image'] ?>" alt="<?= $post['name'] ?>">
+    </a>
     <div class="user-feed__comment">
         <button class="user-feed__comment-button"><?= $post['likes']?></button>
         <p class="user-feed__comment-massage"><?= $post['comment-text'] ?></p>
