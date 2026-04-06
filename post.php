@@ -9,12 +9,12 @@
 <?php 
 include 'storage.php';
 
-$id = $_GET['id'];
+$postId = $_GET['id'];
 
 $foundPost = null;
 
 foreach ($posts as $post) {
-    if ($post['id'] == $id) {
+    if ($post['id'] == $postId) {
         $foundPost = $post;
         break;
     }
