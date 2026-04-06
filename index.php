@@ -1,33 +1,34 @@
-<?php
-$expression = $_POST['expression'];
-
-$expressionArray = explode(' ', $expression);
-$arrayForChar = [];
-foreach ($expressionArray as $char) {
-    if (is_numeric($char)) {
-        array_push($arrayForChar, (int)$char);
-    } else {
-        $ch2 = array_pop($arrayForChar);
-        $ch1 = array_pop($arrayForChar);
-        switch ($char) {
-            case '+':
-                    array_push($arrayForChar, $ch1 + $ch2);
-                    break;
-                case '-':
-                    array_push($arrayForChar, $ch1 - $ch2);
-                    break;
-                case '*':
-                    array_push($arrayForChar, $ch1 * $ch2);
-                    break;
-                case '/':
-                    if ($ch2 == 0){
-                        array_push($arrayForChar, $ch1 / 1);}
-                    else { 
-                        array_push($arrayForChar, $ch1 / $ch2);}
-                    break;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <?php
+        $posts = [
+            [
+                'title' => 'The Road Ahead',
+                'subtitle' => '',
+                'img_modifier' => '',
+                'author' => '',
+                // другие свойства этого поста
+            ],
+            [
+                // свойства второго поста
+            ],
+        ];
+        ?>
+    </div>
+    <div>
+        <?php 
+        foreach ($posts as $post) {
+        include 'post_preview.php';
         }
-    }
-}
-
-echo $arrayForChar[0];
-?>
+        ?>
+    </div>
+    
+</body>
+</html>
