@@ -34,8 +34,10 @@
 
 .user-feed {
     width: 474px;
-    height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .user-feed__post {
