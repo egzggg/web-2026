@@ -11,7 +11,6 @@ include 'storage.php';
 
 $postId = $_GET['id'];
 
-
 foreach ($posts as $post) {
     if ($post['id'] == $postId) {
         $foundPost = $post;
@@ -20,14 +19,12 @@ foreach ($posts as $post) {
 }
 ?>
 
-
 <div>
     <h3><?= $foundPost['id'] ?></h3>
     <h3><?= $foundPost['name'] ?></h3>
     <p><?= $foundPost['comment-text'] ?></p>
     <span><?= $foundPost['comment-time'] ?></span>
 </div>
-
 
 </body>
 </html>
