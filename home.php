@@ -14,7 +14,6 @@
             <li><img class="header__menu-image" src="images/Menu_Item2.png" alt="add-photo"></li>
         </ul>
     </header>
-
     <main class="main">
         <h1 class="main__head"></h1>
         <div class="user-feed">
