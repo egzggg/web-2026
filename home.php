@@ -1,3 +1,4 @@
+<?php require_once 'storage.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +18,12 @@
     <main class="main">
         <h1 class="main__head"></h1>
         <div class="user-feed">
-            <?php
-            include 'index.php';
+            <?php 
+            if (!empty($posts)) {
+                foreach ($posts as $post) {
+                    include 'post_preview.php';
+                }
+            } 
             ?>
         </div>
     </main>

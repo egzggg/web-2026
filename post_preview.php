@@ -1,14 +1,14 @@
 <div class="user-feed__post">
     <div class="user-feed__icon">
-        <img class="user-feed__icon-image" src="<?= $post['image-icon'] ?>" alt="<?= $post['name'] ?>">
-        <h3 class="user-feed__name"><?= $post['name'] ?></h3>
-        <img class="user-feed__icon-edit" src="images/pencil.png" alt="<?= $post['name'] ?>">
+        <img class="user-feed__icon-image" src="<?= htmlspecialchars($post['image_icon'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>">
+        <h3 class="user-feed__name"><?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?></h3>
+        <img class="user-feed__icon-edit" src="images/pencil.png" alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>">
     </div>
-    <img class="user-feed__image" src="<?= $post['image'] ?>" alt="<?= $post['name'] ?>">
+    <img class="user-feed__image" src="<?= htmlspecialchars($post['image'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>">
     <div class="user-feed__comment">
-        <button class="user-feed__comment-button"><?= $post['likes']?></button>
-        <p class="user-feed__comment-massage"><?= $post['comment-text'] ?></p>
-        <p class="user-feed__comment-more-info"><?= $post['comment-more-info']?></p>
-        <p class="user-feed__comment-time"><?= $post['comment-time']?></p>
+        <button class="user-feed__comment-button"><?= htmlspecialchars($post['likes'], ENT_QUOTES, 'UTF-8')?></button>
+        <p class="user-feed__comment-massage"><?= htmlspecialchars($post['comment_text'], ENT_QUOTES, 'UTF-8') ?></p>
+        <p class="user-feed__comment-more-info"><?= htmlspecialchars($post['comment_more_info'], ENT_QUOTES, 'UTF-8')?></p>
+        <p class="user-feed__comment-time"><?= htmlspecialchars($post['comment_time'], ENT_QUOTES, 'UTF-8')?></p>
     </div>
 </div>
