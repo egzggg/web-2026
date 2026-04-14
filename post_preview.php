@@ -4,7 +4,28 @@
         <h3 class="user-feed__name"><?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?></h3>
         <img class="user-feed__icon-edit" src="images/pencil.png" alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>">
     </div>
-    <img class="user-feed__image" src="<?= htmlspecialchars($post['image'], ENT_QUOTES, 'UTF-8') ?>" alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>">
+    <div id="post-<?= $postIndex ?>" class="user-feed__image-container">
+        
+       <?php
+
+       include 'switch_images.php' 
+       ?>
+
+        <?php if (count($post['image']) > 1){?>
+            <form method="POST" action="#post-<?= $postIndex ?>">
+                <input type="hidden" name="index" value="<?= $index + 1 ?>">
+                <input type="hidden" name="post_id" value="<?= $postIndex ?>">
+                <button class="user-feed__image-button">→</button>   
+                
+            </form>
+        <?php } ?>
+
+    
+        <img class="user-feed__image" 
+            src="<?= htmlspecialchars($post['image'][$index], ENT_QUOTES, 'UTF-8') ?>" 
+            alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>"
+        >
+    </div>
     <div class="user-feed__comment">
         <button class="user-feed__comment-button"><?= htmlspecialchars($post['likes'], ENT_QUOTES, 'UTF-8')?></button>
         <p class="user-feed__comment-massage"><?= htmlspecialchars($post['comment_text'], ENT_QUOTES, 'UTF-8') ?></p>

@@ -20,7 +20,8 @@
         <div class="user-feed">
             <?php 
             if (!empty($posts)) {
-                foreach ($posts as $post) {
+                foreach ($posts as $postIndex => $post){
+                    $index = 0;
                     include 'post_preview.php';
                 }
             } 

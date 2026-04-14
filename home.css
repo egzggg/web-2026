@@ -72,8 +72,21 @@
     width: 24px;
 }
 
-.user-feed__image {
+.user-feed__image-container {
+    position: relative;
     width: 474px;
+}
+
+.user-feed__image {
+    width: 100%;
+}
+
+.user-feed__image-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-50%);
 }
 
 .user-feed__comment {
