@@ -1,6 +1,7 @@
 <?php
 $posts = [
  [
+  'id' => 1,
    'name' => 'Ваня Денисов',
    'image' => ['images/winter.png', 'images/fish.png'],
    'image_icon' => 'images/larch.png',
@@ -12,6 +13,7 @@ $posts = [
  ],
  [
    // свойства второго поста
+   'id' => 2,
    'name' => 'Лиза Демина',
    'image' => ['images/fish.png', 'images/winter.png'],
    'image_icon' => 'images/liz.png',
@@ -21,6 +23,7 @@ $posts = [
    'comment_time' => '1 день назад'
  ],
  [
+  'id' => 3,
    'name' => 'Ваня Денисов',
    'image' => ['images/puncacke.png'],
    'image_icon' => 'images/larch.png',

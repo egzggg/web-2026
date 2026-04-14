@@ -26,10 +26,13 @@
                 
             </form>
         <?php } ?>
-        <img class="user-feed__image" 
+        <a title='<?= $post['name'] ?>' href="post.php?id=<?= $post['id'] ?>">
+            <img class="user-feed__image" 
             src="<?= htmlspecialchars($post['image'][$index], ENT_QUOTES, 'UTF-8') ?>" 
             alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>"
-        >
+            >
+        </a>
+        
     </div>
     <div class="user-feed__comment">
         <button class="user-feed__comment-button"><?= htmlspecialchars($post['likes'], ENT_QUOTES, 'UTF-8')?></button>
