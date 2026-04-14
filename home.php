@@ -1,3 +1,4 @@
+<?php require_once 'storage.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,22 @@
 </head>
 <body class="body">
     <header class="header">
-       <?php 
-       include 'header.php'
-       ?>
+        <ul class="header__menu">
+            <li><img class="header__menu-image" src="images/Menu_Item1.png" alt="home"></li>
+            <li><img class="header__menu-image" src="images/Menu_Item3.png" alt="personal-home"></li>
+            <li><img class="header__menu-image" src="images/Menu_Item2.png" alt="add-photo"></li>
+        </ul>
     </header>
     <main class="main">
         <h1 class="main__head"></h1>
         <div class="user-feed">
-            <?php
-            include 'index.php';
+            <?php 
+            if (!empty($posts)) {
+                foreach ($posts as $postIndex => $post){
+                    $index = 0;
+                    include 'post_preview.php';
+                }
+            } 
             ?>
         </div>
     </main>

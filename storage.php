@@ -1,37 +1,37 @@
 <?php
 $posts = [
  [
-	'id' => 1,
+  'id' => 1,
    'name' => 'Ваня Денисов',
-   'image' => 'images/winter.png',
-   'image-icon' => 'images/larch.png',
+   'image' => ['images/winter.png', 'images/fish.png'],
+   'image_icon' => 'images/larch.png',
    'likes' => '❤️ 203',
-   'comment-text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
-   'comment-more-info' => 'еще',
-   'comment-time' => '2 часа назад'
+   'comment_text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
+   'comment_more_info' => 'еще',
+   'comment_time' => '2 часа назад'
    // другие свойства этого поста
  ],
  [
    // свойства второго поста
-	'id' => 2,
+   'id' => 2,
    'name' => 'Лиза Демина',
-   'image' => 'images/fish.png',
-   'image-icon' => 'images/liz.png',
+   'image' => ['images/fish.png', 'images/winter.png'],
+   'image_icon' => 'images/liz.png',
    'likes' => '❤️ 504',
-   'comment-text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
-   'comment-more-info' => '&nbsp',
-   'comment-time' => '1 день назад'
+   'comment_text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
+   'comment_more_info' => '',
+   'comment_time' => '1 день назад'
  ],
  [
-	'id' => 3,
+  'id' => 3,
    'name' => 'Ваня Денисов',
-   'image' => 'images/puncacke.png',
-   'image-icon' => 'images/larch.png',
+   'image' => ['images/puncacke.png'],
+   'image_icon' => 'images/larch.png',
    'likes' => '❤️ 203',
-   'comment-text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
-   'comment-more-info' => 'еще',
-   'comment-time' => '2 часа назад'
+   'comment_text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
+   'comment_more_info' => 'еще',
+   'comment_time' => '2 часа назад'
    // другие свойства этого поста
  ],
 ];
-?> 
+?>                                         
