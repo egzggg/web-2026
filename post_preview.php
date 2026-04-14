@@ -16,7 +16,7 @@
         if ($index >= count($post['image'])) {
             $index = 0;
         }
-?>
+        ?>
 
         <?php if (count($post['image']) > 1){?>
             <form method="POST" action="#post-<?= $postIndex ?>">
