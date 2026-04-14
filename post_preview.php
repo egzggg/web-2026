@@ -26,8 +26,6 @@
                 
             </form>
         <?php } ?>
-
-    
         <img class="user-feed__image" 
             src="<?= htmlspecialchars($post['image'][$index], ENT_QUOTES, 'UTF-8') ?>" 
             alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>"
