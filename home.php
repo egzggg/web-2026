@@ -10,7 +10,7 @@
 <body class="body">
     <header class="header">
         <ul class="header__menu">
-             <li><a href="/home.php"><img class="header__menu-image" src="images/Menu_Item1.png" alt="home"></a></li>
+             <li><a href="/home"><img class="header__menu-image" src="images/Menu_Item1.png" alt="home"></a></li>
             <li><img class="header__menu-image" src="images/Menu_Item3.png" alt="personal-home"></li>
             <li><img class="header__menu-image" src="images/Menu_Item2.png" alt="add-photo"></li>
         </ul>

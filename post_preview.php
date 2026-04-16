@@ -22,11 +22,10 @@
             <form method="POST" action="#post-<?= $postIndex ?>">
                 <input type="hidden" name="index" value="<?= $index + 1 ?>">
                 <input type="hidden" name="post_id" value="<?= $postIndex ?>">
-                <button class="user-feed__image-button">→</button>   
-                
+                <button class="user-feed__image-button">→</button>      
             </form>
         <?php } ?>
-        <a title='<?= $post['name'] ?>' href="post.php?id=<?= $post['id'] ?>">
+        <a title='<?= $post['name'] ?>' href="post?id=<?= $post['id'] ?>">
             <img class="user-feed__image" 
             src="<?= htmlspecialchars($post['image'][$index], ENT_QUOTES, 'UTF-8') ?>" 
             alt="<?= htmlspecialchars($post['name'], ENT_QUOTES, 'UTF-8') ?>"

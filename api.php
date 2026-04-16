@@ -2,6 +2,8 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
+// echo $method;
+
 if ($method !== 'POST') {
     http_response_code(405); 
     echo "Только POST запрос";

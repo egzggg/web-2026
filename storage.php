@@ -3,7 +3,7 @@ $posts = [
  [
   'id' => 1,
    'name' => 'Ваня Денисов',
-   'image' => ['images/winter.png', 'images/fish.png'],
+   'image' => ['images/winter.png', 'images/photo-user/rocletcoffee.png'],
    'image_icon' => 'images/larch.png',
    'likes' => '❤️ 203',
    'comment_text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
@@ -15,7 +15,7 @@ $posts = [
    // свойства второго поста
    'id' => 2,
    'name' => 'Лиза Демина',
-   'image' => ['images/fish.png', 'images/winter.png'],
+   'image' => ['images/fish.png', 'images/photo-user/street.png'],
    'image_icon' => 'images/liz.png',
    'likes' => '❤️ 504',
    'comment_text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
@@ -24,9 +24,9 @@ $posts = [
  ],
  [
   'id' => 3,
-   'name' => 'Ваня Денисов',
+   'name' => 'Ярик Шамаев',
    'image' => ['images/puncacke.png'],
-   'image_icon' => 'images/larch.png',
+   'image_icon' => 'images/yaric.png',
    'likes' => '❤️ 203',
    'comment_text' => 'Так красиво сегодня на улице! Настоящая зима Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в городк',
    'comment_more_info' => 'еще',
