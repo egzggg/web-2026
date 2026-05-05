@@ -27,22 +27,22 @@
         </section>
 
         <section class="login__form">
-            <div class="login__field login__field_type_email">
-                <label class="login__label" for="email">Электропочта</label>
-                <input class="login__input" type="email" id="email" name="email">
-                <p class="login__hint">Введите электропочту в формате *****@***.**</p>
-            </div>
-
-            <div class="login__field login__field_type_password">
-                <label class="login__label" for="password">Пароль</label>
-                <div class="login__password-wrapper">
-                    <input class="login__input login__input_type_password" type="password" id="password" name="password">
-                    <img src="images/Eye.png" alt="Показать пароль" class="login__eye">
+            <div class="login__form-warp">
+                <div class="login__field">
+                    <label class="login__label" for="email">Электропочта</label>
+                    <input class="login__input" type="email" id="email" name="email">
+                    <p class="login__hint">Введите электропочту в формате *****@***.**</p>
                 </div>
-            </div>
 
-            <div class="login__actions">
-                <button class="login__button" type="submit">Продолжить</button>
+                <div class="login__field">
+                    <label class="login__label" for="password">Пароль</label>
+                    <div class="login__password-wrapper">
+                        <input class="login__input" type="password" id="password" name="password">
+                        <img src="images/Eye.png" alt="Показать пароль" class="login__eye">
+                    </div>
+                </div>
+                
+                <button class="login__button" type="submit">Продолжить</button>               
             </div>
         </section>
     </main>
