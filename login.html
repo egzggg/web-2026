@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Войти</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.css">
 </head>
-<body>
-    <main>
-        <div>
-            <h1>Войти</h1>
-            <div>
+<body class="page">
+    <main class="login">
+        <section class="login__header">
+            <h1 class="login__title">
+                <span class="login__title-text">Войти</span>
+                
+            </h1>
+            <div class="login__image-wrapper">
                 <img
-                class="man"
-                srcset="images/man.png,"
-                src="images/man.png" 
-                alt="happy man"
+                    class="login__image"
+                    src="images/man.png"
+                    srcset="images/man.png"
+                    alt="happy man"
                 >
             </div>
-        </div>
-        <div class="Login">
-            <div class="email">
-                <p style="margin: 0px;">Электропочта</p>
-                <input class="input" type="text" name="names">
-                <p style="font-size: 13px; margin: 0px; color: gray;">Введите электропочту в формате *****@***.**</p>
+        </section>
+
+        <section class="login__form">
+            <div class="login__form-warp">
+                <div class="login__field">
+                    <label class="login__label" for="email">Электропочта</label>
+                    <input class="login__input" type="email" id="email" name="email">
+                    <p class="login__hint">Введите электропочту в формате *****@***.**</p>
+                </div>
+
+                <div class="login__field">
+                    <label class="login__label" for="password">Пароль</label>
+                    <div class="login__password-wrapper">
+                        <input class="login__input" type="password" id="password" name="password">
+                        <img src="images/Eye.png" alt="Показать пароль" class="login__eye">
+                    </div>
+                </div>
+                
+                <button class="login__button" type="submit">Продолжить</button>               
             </div>
-            <div class="password">
-                <p style="margin-top: 15px; margin-bottom: 0px;">Пароль</p>
-                <input class="input_password" type="password" name="pass" style="position: absolute">
-                <img src="images/Eye.png" alt="Eye" class="eye">
-            </div>
-            <div>
-                <button class="button">Продолжить</button>
-            </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
