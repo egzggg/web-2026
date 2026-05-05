@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="page">
+    <main class="login">
+        <section class="login__header">
+            <h1 class="login__title">
+                <span class="login__title-text">Войти</span>
+                
+            </h1>
+            <div class="login__image-wrapper">
+                <img
+                    class="login__image"
+                    src="images/man.png"
+                    srcset="images/man.png"
+                    alt="happy man"
+                >
+            </div>
+        </section>
+
+        <section class="login__form">
+            <div class="login__field login__field_type_email">
+                <label class="login__label" for="email">Электропочта</label>
+                <input class="login__input" type="email" id="email" name="email">
+                <p class="login__hint">Введите электропочту в формате *****@***.**</p>
+            </div>
+
+            <div class="login__field login__field_type_password">
+                <label class="login__label" for="password">Пароль</label>
+                <div class="login__password-wrapper">
+                    <input class="login__input login__input_type_password" type="password" id="password" name="password">
+                    <img src="images/Eye.png" alt="Показать пароль" class="login__eye">
+                </div>
+            </div>
+
+            <div class="login__actions">
+                <button class="login__button" type="submit">Продолжить</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
