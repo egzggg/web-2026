@@ -19,7 +19,7 @@
         ?>
 
         <?php if (count($post['image']) > 1){?>
-            <form method="POST" action="#post-<?= $postIndex ?>">
+            <form onclick="onclick()" method="POST" action="#post-<?= $postIndex ?>">
                 <input type="hidden" name="index" value="<?= $index + 1 ?>">
                 <input type="hidden" name="post_id" value="<?= $postIndex ?>">
                 <button class="user-feed__image-button">→</button>      
@@ -34,9 +34,10 @@
         
     </div>
     <div class="user-feed__comment">
-        <button class="user-feed__comment-button"><?= htmlspecialchars($post['likes'], ENT_QUOTES, 'UTF-8')?></button>
         <p class="user-feed__comment-massage"><?= htmlspecialchars($post['comment_text'], ENT_QUOTES, 'UTF-8') ?></p>
         <p class="user-feed__comment-more-info"><?= htmlspecialchars($post['comment_more_info'], ENT_QUOTES, 'UTF-8')?></p>
         <p class="user-feed__comment-time"><?= htmlspecialchars($post['comment_time'], ENT_QUOTES, 'UTF-8')?></p>
+        <button onclick="onclick() class="user-feed__comment-button"><?= htmlspecialchars($post['likes'], ENT_QUOTES, 'UTF-8')?></button>
     </div>
+    <script src="./js/main.js"></script>
 </div>
